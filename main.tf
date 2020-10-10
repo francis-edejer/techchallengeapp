@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 module "us-east-1" {
-  source                  = "../modules"
+  source                  = "modules"
   region                  = "us-east-1"
   # ECS Service container fleet and deployment configs
   ecs_cluster             = "default"
