@@ -34,7 +34,7 @@ module "us-east-1" {
   # VPC configs
   vpc_id                  = "vpc-123456"
   task_subnet             = "subnet-123456"
-  allowed_sg              = "sg-123123123"
+  allowed_sg              = var.allowed_sg
   providers = {
     aws = aws.development
   }
